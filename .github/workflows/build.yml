@@ -16,10 +16,9 @@ jobs:
         build: [macos, windows, linux]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
-      - uses: chickensoft-games/setup-godot@v2
-      
+      - uses: chickensoft-games/setup-godot@v1
         with:
           version: 4.2.1
           use-dotnet: false
